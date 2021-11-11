@@ -5,6 +5,7 @@ public class Curso {
 	private String codcur;
 	private String nomcur;
 	private int nota;
+	private int credito;
 	public String getCodcur() {
 		return codcur;
 	}
@@ -23,6 +24,13 @@ public class Curso {
 	public void setNota(int nota) {
 		this.nota = nota;
 	}
+	public int getCredito() {
+		return credito;
+	}
+	public void setCredito(int credito) {
+		this.credito = credito;
+	}
+	
 	
 
 	

@@ -15,6 +15,7 @@ public class CursoRowMapper implements RowMapper<Curso> {
 			us.setCodcur(rs.getString("codcur"));
 	                us.setNomcur(rs.getString("nomcur"));
 	                us.setNota(rs.getInt("nota"));
+	                us.setCredito(rs.getInt("credito"));
 			return us;
 		}	
 	}

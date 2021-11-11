@@ -42,7 +42,7 @@ public class alumnoRepImpl extends JdbcDaoSupport implements alumnoRepository {
 	public List<Curso> extraercurso(String codalu) {
 		JdbcTemplate jdbctemplate = context.getBean(conn, JdbcTemplate.class);
         //consulta sql
-		String sql="select c.codcur,c.nomcur,d.nota \r\n"
+		String sql="select c.codcur,c.nomcur,d.nota, c.credito \r\n"
 				+ "from alumno a \r\n"
 				+ "inner join curso_alumno d on a.codalu=d.codalu \r\n"
 				+ "inner join curso c on c.codcur=d.codcur\r\n"
